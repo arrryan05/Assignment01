@@ -1,0 +1,296 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  background-color: #f7f8fedd;
+
+  .sideBar {
+      padding: 20px;
+
+      .sideInner {
+          width: 100%;
+          height: 100%;
+          background-color: black;
+          border-radius: 20px;
+          padding-left: 30px;
+          color: white;
+          font-family: Arial, Helvetica, sans-serif;
+          padding-top: 50px;
+
+          section {
+              font-size: 22px;
+              font-weight: 600;
+              margin-bottom: 30px;
+          }
+
+          div {
+              font-weight: 500;
+              line-height: 40px;
+              font-size: 12px;
+              letter-spacing: .6px;
+              cursor: pointer;
+              opacity: .8;
+
+              &:hover {
+                  opacity: 1;
+              }
+          }
+      }
+  }
+
+  .inner {
+      padding-top: 20px;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+          display: none;
+      }
+
+      .headerBar {
+          width: 100%;
+          line-height: 50px;
+          padding-left: 20px;
+          padding-right: 40px;
+
+          section {
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 18px;
+              font-weight: 600;
+          }
+      }
+
+
+      .boxContainer {
+          width: 100%;
+          height: 100px;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          margin-top: 10px;
+          padding-right: 20px;
+
+          .box1,
+          .box2,
+          .box3,
+          .box4 {
+              padding: 0px 20px 0px 20px;
+
+              div {
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 10px;
+                  font-family: Arial, Helvetica, sans-serif;
+                  padding-top: 25px;
+                  padding-left: 20px;
+                  position: relative;
+
+                  section{
+                      font-size: 24px;
+                      font-weight: 600;
+                      margin-top: 8px;
+                  }
+                  span{
+                      font-size: 12px;
+                  }
+
+                  p{
+                      position: absolute;
+                      top:10px;
+                      right: 25px;
+                  }
+              }
+          }
+
+          .box1 {
+              div {
+                  background-color: #DDEFE0;
+              }
+          }
+
+          .box2 {
+              div {
+                  background-color: #F4ECDD;
+              }
+          }
+
+          .box3 {
+              div {
+                  background-color: #EFDADA;
+              }
+          }
+
+          .box4 {
+              div {
+                  background-color: #DEE0EF;
+              }
+          }
+      }
+
+
+      .middleContainer {
+          width: 100%;
+          height: 100%;
+          height: 40vh;
+          margin-top: 30px;
+          padding: 0px 40px 0px 20px;
+
+          .midInner {
+              width: 100%;
+              height: 100%;
+              background-color: white;
+              border-radius: 20px;
+              border: 1px solid #DDDD;
+              position: relative;
+
+              section {
+                  position: absolute;
+                  top: 15px;
+                  left: 40px;
+                  font-weight: bold;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
+                  font-size: 14px;
+              }
+
+              .d1, .d2{
+                  font-family: Arial, Helvetica, sans-serif;
+                  position: absolute;
+                  top:20px;
+                  font-size: 14px;
+                  font-weight: 600;
+              }
+              .d1{
+                  right: 150px;
+              }
+              .d2{
+                  right: 80px;
+              }
+
+              .chart {
+                  width: 100%;
+                  height: 80%;
+                  margin: auto;
+                  margin-top: 8vh;
+              }
+
+          }
+      }
+
+
+      .bottomContainer {
+          width: 100%;
+          margin-top: 30px;
+          height: 40vh;
+          margin-bottom: 20px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          padding-right: 20px;
+
+          .left {
+              padding: 20px;
+
+              .innerLeft {
+                  width: 100%;
+                  height: 100%;
+                  background-color: white;
+                  border: 1px solid #DDDD;
+                  border-radius: 20px;
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  font-family: Arial, Helvetica, sans-serif;
+
+                  .chartCon {
+                      
+                      section {
+                          font-weight: 600;
+                          padding-top: 20px;
+                          padding-left: 20px;
+                      }
+
+                      .chart2 {
+                          width: 200px;
+                          height: 200px;
+                      }
+                  }
+                  
+                  
+                  .textContent {
+                      padding-top: 30px;
+                      position: relative;
+
+                      .temp{
+                          font-size: 12px;
+                          color: gray;
+                          font-weight: 500;
+                          position: absolute;
+                          right: 30px;
+                          top:0px
+                      }    
+                      
+                      div {
+                          font-weight: 600;
+                          font-size: 14px;
+                          margin-top: 10px;
+
+                          span {
+                              margin-left: 25px;
+                              font-weight: 500;
+                              font-size: 11px;
+                              color: #858585;
+                          }
+                      }
+                  }
+              }
+          }
+
+          .right {
+              padding: 20px;
+              font-family: Arial, Helvetica, sans-serif;
+
+              .rightInner {
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 20px;
+                  border: 1px solid #DDDD;
+                  background-color: white;
+                  position: relative;
+
+                  .temp{
+                      font-size: 12px;
+                      color: gray;
+                      font-weight: 500;
+                      position: absolute;
+                      right: 30px;
+                      top:20px
+                  }
+
+                  section {
+                      font-weight: 600;
+                      padding-top: 20px;
+                      padding-left: 20px;
+                  }
+
+                  .sheduleCard {
+                      margin-top: 30px;
+                      margin-left: 20px;
+                      border-left: 5px solid black;
+                      padding-left: 10px;
+
+                      div {
+                          color: #666666;
+                          font-weight: 600;
+                          font-size: 14px;
+                      }
+
+                      span,
+                      p {
+                          font-size: 12px;
+                          color: #999999;
+                      }
+
+                  }
+              }
+          }
+      }
+
+  }
+}
